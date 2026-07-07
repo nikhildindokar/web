@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nikhil Dindokar — InfraOps Engineer III at AWS. Portfolio showcasing infrastructure operations, DevOps projects, and cloud engineering expertise.">
+    <meta name="keywords" content="Nikhil Dindokar, InfraOps Engineer, AWS, DevOps, Cloud Engineer, Portfolio, Infrastructure">
+    <meta name="author" content="Nikhil Dindokar">
+    <meta name="theme-color" content="#0F1115">
+    <title>Nikhil Dindokar — InfraOps Engineer III | AWS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════ PRELOADER ═══════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <span class="preloader-logo">ND</span>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">ND</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-theme-item">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme">
+                        <!-- Sun Icon (visible in Dark theme to switch to Light) -->
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <!-- Moon Icon (visible in Light theme to switch to Dark) -->
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO / LANDING ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="container hero-container-grid">
+            <div class="hero-text-side animate-on-scroll fade-in-left">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Nikhil Dindokar</h1>
+                <p class="hero-designation">
+                    <span class="typing-text">InfraOps Engineer III, AWS | Aspiring DevOps &amp; Cloud Engineer</span>
+                    <span class="typing-cursor">|</span>
+                </p>
+                <p class="hero-intro">
+                    I'm an infrastructure operations professional with 2 years of hands-on experience running AWS data center environments at scale — maintaining 99.9% uptime SLAs across 1200+ racks. I specialize in incident resolution, infrastructure monitoring, and process automation, having used automation to cut manual diagnostic work by 75%. My current focus is bridging this operational foundation into DevOps and Cloud Engineering, with practical experience in Terraform, Docker, CI/CD pipelines, and monitoring stacks like Prometheus and Grafana. Let's talk about how that combination can solve real infrastructure problems on your team.
+                </p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">Learn More About Me</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/nikhil-dindokar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:dindokarnikhil23@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual-side animate-on-scroll fade-in-right">
+                <div class="pipeline-widget">
+                    <div class="pipeline-header">
+                        <span class="pipeline-title">GITOPS PIPELINE RUNNER</span>
+                        <span class="pipeline-run-id">RUN #2948</span>
+                    </div>
+                    <div class="pipeline-steps">
+                        <!-- Step 1: Commit -->
+                        <div class="pipeline-step step-commit" data-step="1">
+                            <div class="step-indicator">
+                                <span class="step-num">1</span>
+                                <svg class="step-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <span class="step-name">Source Code Commit</span>
+                                <span class="step-desc">git commit -m "feat: setup vpc subnets"</span>
+                            </div>
+                        </div>
+                        <!-- Step 2: Build -->
+                        <div class="pipeline-step step-build" data-step="2">
+                            <div class="step-indicator">
+                                <span class="step-num">2</span>
+                                <svg class="step-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <span class="step-name">Docker Build & Push</span>
+                                <span class="step-desc">docker build -t app:v1.2.0</span>
+                            </div>
+                        </div>
+                        <!-- Step 3: IaC Provision -->
+                        <div class="pipeline-step step-iac" data-step="3">
+                            <div class="step-indicator">
+                                <span class="step-num">3</span>
+                                <svg class="step-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <span class="step-name">IaC Infrastructure Provision</span>
+                                <span class="step-desc">terraform apply -auto-approve</span>
+                            </div>
+                        </div>
+                        <!-- Step 4: AWS Deploy -->
+                        <div class="pipeline-step step-deploy" data-step="4">
+                            <div class="step-indicator">
+                                <span class="step-num">4</span>
+                                <svg class="step-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <span class="step-name">Cloud Deployment (AWS ECS)</span>
+                                <span class="step-desc">ecs-cli deploy --cluster production</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pipeline-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-msg">Initializing pipeline...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- ═══════════════ ABOUT ME ═══════════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Infrastructure operations professional with a DevOps trajectory</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-on-scroll fade-in-left">
+                    <div class="about-profile-widget">
+                        <div class="about-profile-glow"></div>
+                        <div class="about-profile-frame">
+                            <img src="profile picture/profile image.jpeg" alt="Nikhil Dindokar" class="about-profile-img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll fade-in-right">
+                    <p class="about-text">
+                        I currently work as an InfraOps Engineer at Amazon Web Services in Mumbai, where I maintain 99.9% uptime SLAs across 1200+ racks supporting core AWS services including EC2, EBS, and S3 Glacier. My day-to-day involves incident triage and resolution, infrastructure monitoring, and building automation that has cut repetitive diagnostic work by 75%.
+                    </p>
+                    <p class="about-text">
+                        I work regularly with AWS core services, Terraform, Ansible, Docker, Jenkins, and monitoring tools like CloudWatch, Prometheus, and Grafana. I hold a B.Tech in Electronics and Telecommunication Engineering from Dr. D. Y. Patil Institute of Technology, Pune, and a Diploma in the same field from Government Polytechnic, Khamgaon.
+                    </p>
+                    <p class="about-text">
+                        What sets me apart is the operational depth I bring — I've managed live production infrastructure at scale, not just built toy projects — and I'm now applying that depth to DevOps and cloud engineering through self-driven projects in CI/CD, infrastructure-as-code, and container orchestration.
+                    </p>
+                    <div class="about-quotes">
+                        <blockquote class="about-quote">
+                            <span class="quote-label">Mission</span>
+                            To bridge deep operational infrastructure experience with modern DevOps practice, building systems that are reliable by default and automated by design.
+                        </blockquote>
+                        <blockquote class="about-quote">
+                            <span class="quote-label">Vision</span>
+                            To grow into a Cloud/DevOps engineering role where uptime, automation, and incident response expertise directly translate into business-critical infrastructure reliability.
+                        </blockquote>
+                    </div>
+                    <div class="about-nav-pills">
+                        <span class="about-nav-label">View My Work:</span>
+                        <a href="#experience" class="pill-link">Experience</a>
+                        <a href="#education" class="pill-link">Education</a>
+                        <a href="#projects" class="pill-link">Projects</a>
+                        <a href="#skills" class="pill-link">Skills</a>
+                        <a href="#certifications" class="pill-link">Certifications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ WORK EXPERIENCE ═══════════════ -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Building reliable infrastructure at scale</p>
+            </div>
+            <div class="experience-clean-timeline">
+                <div class="timeline-track"></div>
+                
+                <div class="timeline-node animate-on-scroll fade-in-up">
+                    <!-- Glowing Node Dot -->
+                    <div class="node-dot"></div>
+                    
+                    <!-- Main Content Block -->
+                    <div class="node-content">
+                        
+                        <!-- Header -->
+                        <div class="node-header">
+                            <div class="node-logo-wrapper">
+                                <svg class="node-aws-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div class="node-header-details">
+                                <div class="node-title-row">
+                                    <h3 class="node-role">InfraOps Engineer III</h3>
+                                    <span class="node-pill">Full-time</span>
+                                </div>
+                                <div class="node-company-row">
+                                    <span class="node-company">Amazon Web Services (AWS)</span>
+                                    <span class="node-meta-divider">•</span>
+                                    <span class="node-duration">Oct 2024 – Present</span>
+                                    <span class="node-meta-divider">•</span>
+                                    <span class="node-location">Mumbai, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Bullet lists -->
+                        <div class="node-details">
+                            <div class="node-section">
+                                <h4 class="node-section-title">Core Operations & Triage</h4>
+                                <ul class="node-list">
+                                    <li>Monitor infrastructure health across internal dashboards and alerting tools to maintain uptime SLAs.</li>
+                                    <li>Manage incident tickets end-to-end: triage, escalation, and resolution.</li>
+                                    <li>Execute and document SOPs and runbooks for global infrastructure operations.</li>
+                                    <li>Diagnose and resolve network connectivity issues on AWS internal network infrastructure.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="node-section">
+                                <h4 class="node-section-title status-success">Key Achievements</h4>
+                                <ul class="node-list achievements-list">
+                                    <li>Maintained <strong>99.9% uptime SLAs</strong> across <strong>1200+ racks</strong> supporting AWS EC2, EBS, and S3 Glacier.</li>
+                                    <li>Automated manual diagnostic and reporting tasks using internal AI tools, cutting repetitive work by <strong>75%</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundation in electronics and telecommunications</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card animate-on-scroll drop-in">
+                    <div class="education-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+                    </div>
+                    <span class="education-badge">2021 – 2024</span>
+                    <h3 class="education-degree">Bachelor of Technology</h3>
+                    <p class="education-field">Electronics and Telecommunication Engineering</p>
+                    <p class="education-institution">Dr. D. Y. Patil Institute of Technology, Pune</p>
+                    <span class="education-mode">Full-time</span>
+                </div>
+                <div class="education-card animate-on-scroll drop-in delay-2">
+                    <div class="education-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+                    </div>
+                    <span class="education-badge">2018 – 2021</span>
+                    <h3 class="education-degree">Diploma</h3>
+                    <p class="education-field">Electronics and Telecommunication Engineering</p>
+                    <p class="education-institution">Government Polytechnic, Khamgaon</p>
+                    <span class="education-mode">Full-time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Self-driven DevOps and cloud engineering projects</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll blur-to-sharp">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <span class="project-type">Personal Project</span>
+                    </div>
+                    <h3 class="project-title">CI/CD Pipeline with Containerized App</h3>
+                    <p class="project-description">
+                        Built an automated CI/CD pipeline using GitHub Actions for a 3-tier application, with services containerized in Docker and images managed through AWS ECR, deployed to AWS ECS with zero-downtime rolling updates.
+                    </p>
+                    <div class="project-outcomes">
+                        <h4>Key Outcomes</h4>
+                        <ul>
+                            <li>Automated pipeline replacing manual multi-step deployment with a single trigger</li>
+                            <li>Zero-downtime rolling updates on AWS ECS</li>
+                            <li>Full containerization with AWS ECR image management</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-pill">GitHub Actions</span>
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">AWS ECR</span>
+                        <span class="tech-pill">AWS ECS</span>
+                    </div>
+                    <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll blur-to-sharp delay-1">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="project-type">Personal Project</span>
+                    </div>
+                    <h3 class="project-title">AWS Infrastructure Automation with Terraform</h3>
+                    <p class="project-description">
+                        Provisioned AWS infrastructure (VPC, EC2, IAM, security groups) using Terraform modules, with remote state management via S3 backend and DynamoDB locking.
+                    </p>
+                    <div class="project-outcomes">
+                        <h4>Key Outcomes</h4>
+                        <ul>
+                            <li>Replaced manual console-based setup with version-controlled, repeatable infrastructure code</li>
+                            <li>Implemented safe concurrent state management via DynamoDB locking</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-pill">Terraform</span>
+                        <span class="tech-pill">AWS VPC</span>
+                        <span class="tech-pill">EC2</span>
+                        <span class="tech-pill">IAM</span>
+                        <span class="tech-pill">S3</span>
+                        <span class="tech-pill">DynamoDB</span>
+                    </div>
+                    <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll blur-to-sharp delay-2">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <span class="project-type">Personal Project</span>
+                    </div>
+                    <h3 class="project-title">Monitoring &amp; Alerting for Containerized Application</h3>
+                    <p class="project-description">
+                        Configured Prometheus and Grafana for real-time monitoring of CPU, memory, and latency metrics on containerized applications, with alerting rules for failure and performance degradation.
+                    </p>
+                    <div class="project-outcomes">
+                        <h4>Key Outcomes</h4>
+                        <ul>
+                            <li>Real-time visibility into container health metrics</li>
+                            <li>Automated alerting on failure and degradation conditions</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-pill">Prometheus</span>
+                        <span class="tech-pill">Grafana</span>
+                        <span class="tech-pill">Docker</span>
+                    </div>
+                    <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technical toolkit across cloud, automation, and operations</p>
+            </div>
+            <div class="skills-grid animate-on-scroll fade-in-up stagger-children">
+                <!-- Cloud & Infrastructure -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        Cloud &amp; Infrastructure
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">EC2</span>
+                        <span class="skill-pill">S3</span>
+                        <span class="skill-pill">VPC</span>
+                        <span class="skill-pill">IAM</span>
+                        <span class="skill-pill">CloudWatch</span>
+                        <span class="skill-pill">Lambda</span>
+                        <span class="skill-pill">RDS</span>
+                        <span class="skill-pill">Route 53</span>
+                        <span class="skill-pill">ELB</span>
+                        <span class="skill-pill">Auto Scaling</span>
+                    </div>
+                </div>
+
+                <!-- Configuration Management / IaC -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        Configuration Management / IaC
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Terraform</span>
+                        <span class="skill-pill">Ansible</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                        CI/CD
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Jenkins</span>
+                        <span class="skill-pill">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        Monitoring
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">CloudWatch</span>
+                        <span class="skill-pill">Prometheus</span>
+                        <span class="skill-pill">Grafana</span>
+                    </div>
+                </div>
+
+                <!-- Containerization -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                        Containerization
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Scripting -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        Scripting
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Bash</span>
+                        <span class="skill-pill">Shell Scripting</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        Operating Systems
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">Windows</span>
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
+                        Version Control
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional development and validated skills</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card animate-on-scroll waterfall-cascade" data-cert-title="TCS iON Soft Skills Certificate" data-cert-provider="TCS iON" data-cert-description="Comprehensive soft skills certification covering communication, teamwork, and professional development.">
+                    <div class="cert-card-inner">
+                        <div class="cert-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 12l3 3 7-7"/></svg>
+                        </div>
+                        <h3 class="cert-title">TCS iON Soft Skills Certificate</h3>
+                        <p class="cert-provider">TCS iON</p>
+                        <span class="cert-view-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            View Certificate
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p class="cert-note animate-on-scroll fade-in-up">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Currently pursuing additional cloud and DevOps certifications — AWS Solutions Architect Associate is next on the roadmap.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════ STATS ═══════════════ -->
+    <section class="section stats" id="stats">
+        <div class="container">
+            <div class="stats-grid animate-on-scroll fade-in-up">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Certification</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title">Let's Build Something Reliable</h2>
+                <p class="section-subtitle">Have a project, opportunity, or question? Reach out.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper animate-on-scroll slide-in-left">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Full Name</label>
+                            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email Address</label>
+                            <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Your message (minimum 10 characters)" rows="5" required minlength="10"></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" id="contact-submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll slide-in-right">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <p class="contact-info-subtitle">Feel free to reach out through any of these channels.</p>
+                        <div class="contact-items">
+                            <a href="mailto:dindokarnikhil23@gmail.com" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Email</span>
+                                    <span class="contact-item-value">dindokarnikhil23@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+919767431321" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Phone</span>
+                                    <span class="contact-item-value">+91-9767431321</span>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Location</span>
+                                    <span class="contact-item-value">Mumbai, India</span>
+                                </div>
+                            </div>
+                            <a href="https://linkedin.com/in/nikhil-dindokar" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">LinkedIn</span>
+                                    <span class="contact-item-value">linkedin.com/in/nikhil-dindokar</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">GitHub</span>
+                                    <span class="contact-item-value">github.com/nikhildindokar</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">ND</a>
+                    <p class="footer-tagline">Infrastructure operations background. DevOps future.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/nikhildindokar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/nikhil-dindokar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:dindokarnikhil23@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nikhil Dindokar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ CERTIFICATE MODAL ═══════════════ -->
+    <div class="modal" id="cert-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal-body">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-provider" id="modal-provider"></p>
+                <p class="modal-description" id="modal-description"></p>
+                <div class="modal-actions" style="margin-top: 24px;">
+                    <a href="CERTIFICATIONS/Nikhil Dindokar Soft skills certificate.pdf" target="_blank" class="btn btn-primary modal-action-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        View Official PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ BACK TO TOP ═══════════════ -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ═══════════════ TOAST CONTAINER ═══════════════ -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
